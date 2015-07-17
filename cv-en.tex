@@ -1,0 +1,151 @@
+%************************************
+%
+% Cirriculum Vitae - Rytis Karpuška
+%
+%************************************
+
+%Packages stuff
+\documentclass[12]{article}
+\input{structure.tex}
+
+
+\begin{document}
+
+\title{Rytis Karpuška}
+
+
+\parbox{0.5\textwidth}{ % First block
+\begin{tabbing} % Enables tabbing
+\hspace{3cm} \= \hspace{4cm} \= \kill % Spacing within the block
+{\bf Address:} \> Paukščių tako 72,\\ % Address line 1
+\> Vilnius, LT12189\\ % Address line 2
+{\bf Date of birth:} \> 1992-09-30\\ % Date of birth 
+\end{tabbing}}
+\hfill % Horizontal space between the two blocks
+\parbox{0.5\textwidth}{ % Second block
+\begin{tabbing} % Enables tabbing
+\hspace{3cm} \= \hspace{4cm} \= \kill % Spacing within the block
+{\bf Phone.:} \> +37061476947 \\ % Mobile phone
+{\bf E-mail:} \> \href{mailto:rytis.karpuska@gmail.com}{rytis.karpuska@gmail.com} \\ % Email address
+\end{tabbing}}
+
+\section{About me}
+
+Since my childhood I was interested in exact sciences.
+When I was 11-12 years old, I got interested in physics, but in a while from all of the branches of physics - electronics became the most interesting.
+I started soldering simple devices like LED blinkers, audio amplifiers etc.
+After a few years I came across microcontrollers and then I wrote my first assembler program which was capable of turning on LED.
+That got me hooked up with programming and since then I almost always have some kind of freetime project related to programming.
+
+\section{Education}
+
+\tabbedblock{
+	\bf{2011 - 2015} \> University of Vilnius Bachelors degree in Software Engineering - \href{http://www.vu.lt}{University of Vilnius} \\[5pt]
+	\>First and second semesters - 90+\% Average\\
+	\>\+
+}
+
+\tabbedblock{
+	\bf{2011} \> Andrew Ng online course "Machine Learning". \textit{http://ml-class.org}\\
+	\>\+
+}
+
+\section{Professional experience}
+
+\job
+{2011 -}{Now}
+{JSC "Elektromotus", Žirmūnų g. 68, Vilnius, Lietuva}
+{http://www.elektromotus.eu}
+{Architect, Software developer}
+{
+}
+
+
+\section{Projects}
+
+\job
+{2007}{}
+{Obstacle avoiding robot for "Infobalt 2007" excibition.}
+{http://blog.elektronika.lt/robotai/2007/10/28/reportazai-is-infobalt2007/}
+{http://blog.elektronika.lt/robotai/2007/10/28/reportazai-is-infobalt2007/}
+{This is one of the most interesting works from my childhood.
+Robot was controlled by AVR ATmega microcontroller, and had some IR sensors for obstacle detection. \\
+\rule{0mm}{5mm}\textbf{Technologies:} AVR, GCC.}
+
+
+\job
+{2011 -}{2012}
+{Battery Management System "Emus BMS"}
+{http://www.elektromotus.lt/lt/produktai/bms.html}
+{http://www.elektromotus.lt/lt/produktai/bms.html}
+{
+This Battery Management System is JSC "Elektromotus" product.
+I was one of the main programmers for this system in 2011.
+One of the most notable usages of this system is "ACCIONA" team in Dakar rally.\\
+\rule{0mm}{5mm}\textbf{Technologies:} AVR, svn, GCC, Linux, Qt4.}
+
+\job
+{2012 - }{2013}
+{Electric "Smart fourtwo" conversion kit ECU.}
+{http://grynas.delfi.lt/tv/lietuviu-perdarytas-elektromobilis-100-km-nuvaziuoja-uz-7-litus.d?id=61776195}
+{http://grynas.delfi.lt/tv/lietuviu-perdarytas-elektromobilis-100-km-nuvaziuoja-uz-7-litus.d?id=61776195}
+{
+During this JSC "Elektromotus" project electric conversion kit for "Smart fortwo" car has been developed.
+I have designed and programmed firmware for main ECU unit which controlled engine, gearbox, cooling and communicated to other systems over CAN bus.\\
+\rule{0mm}{5mm}\textbf{Technologies:} ARM-Cortex M3, Linux, GCC, git, CAN.}
+
+\job
+{2014 -}{2015}
+{Sensor network for Norvegian railways contact wire monitoring.}
+{}
+{}
+{
+During this JSC "Elektromotus" project a custom wireless sensor network system has been developed for acceleration and rotation measurements of contact wire.
+Due to high requirements for power consumptions and radio distance - custom variable latency radio network protocol has been developed to allow radio hardware to be in low-power mode most of the time.
+Modified version of sliding window protocol has been impleneted to allow reliable data transmission over the network.
+Communication stack has been implemented in ARM Cortex-M3 and also as a linux kernel device driver.
+Whole system has the ability to be monitored over the internet.\\
+\rule{0mm}{5mm}\textbf{Technologies:} ARM-Cortex M3, Linux kernel device drivers, GCC, git, MEMS, 2.4Ghz radio, Raspberry pi, GSM, VPN, VPS.}
+
+\job
+{2013 -}{Now}
+{Quadcopter controlled over internet.}
+{https://github.com/jauler/Quadcopter}
+{https://github.com/jauler/Quadcopter}
+{
+This is my current personal freetime project.
+I have developed all of the flight and stability algorithms.
+Currently first flight tests are being performed.\\
+\rule{0mm}{5mm}\textbf{Technologies:} ARM-Cortex M4, GCC, git, MEMS, Raspberry pi, GSM.}
+
+
+\section{Skills}
+
+\skillgroup{Programming languages}
+{
+	\textit{Assembler, C, C++} - 4 years expereince in professional environment, 8 years including hobby usage.\\
+	\textit{Octave, Matlab, Python, Bash} - Frequent usage for scripts in professional and hobby needs.\\
+	\textit{Java, Ruby, html, css, sql, latex} - Used for personal needs. \\
+
+}
+
+\skillgroup{Other}
+{
+	\textit{Linux} - 7 years of usage for personal purposes, some experience in linux device drivers development.\\
+	\textit{git, svn} - 4 years of profesional and personal usage.\\
+	\textit{vim} - 2 years of profesional and personal usage.\\
+}
+
+
+\section{Interests}
+
+\interestsgroup{
+	\interest{Embedded systems, 3D graphics, machine learning;}
+	\interest{"Encounter" urban games;}
+	\interest{Driving;}
+}
+
+\end{document}
+
+
+
