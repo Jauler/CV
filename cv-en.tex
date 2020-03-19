@@ -36,7 +36,7 @@
 Since my childhood I was interested in exact sciences like math, physics, etc.
 When I was 11-12 years old, physics attracted me the most, however, over time, electronics became the most interesting branch to me.
 I started soldering simple devices like LED blinkers, audio amplifiers etc.
-Few years in, I came across microcontrollers and after writing my first assembler "program" which was capable of turning on LED - I got hooked on programming.
+Few years in, I came across microcontrollers and after writing my first assembler "program" which was berely capable of turning on LED - I got hooked on programming.
 This was turning point in my life.
 Since then, I have been working on projects related to programming in professional and hobby settings constantly.
 
@@ -111,8 +111,8 @@ I have designed and programmed firmware for main ECU unit which controlled engin
 {https://www.sciencedirect.com/science/article/pii/S2214399816300121}
 {
 During this JSC "Elektromotus" project a custom wireless sensor network system has been developed for acceleration and rotation measurements of contact wire.
-Due to high requirements for power consumptions - custom variable latency radio network protocol has been developed to allow radio hardware to be in low-power mode most of the time.
-Modified version of sliding window protocol has been impleneted to allow reliable data transmission over the network.
+Due to high requirements for power consumption - custom variable latency radio network protocol has been developed to allow radio hardware to be in low-power mode most of the time.
+Modified version of sliding window protocol has been implemented to allow reliable data transmission over the network.
 Communication stack has been implemented in ARM Cortex-M3 and also as a linux kernel device driver.
 The whole system has the ability to be controlled over the internet.\\
 \rule{0mm}{5mm}\textbf{Technologies:} ARM-Cortex M3, Linux kernel device drivers, GCC, git, MEMS, 2.4Ghz radio, Raspberry pi, GSM, VPN, VPS.}
@@ -123,12 +123,11 @@ The whole system has the ability to be controlled over the internet.\\
 {https://www.neurotechnology.com/megamatcher-accelerator.html}
 {https://www.neurotechnology.com/megamatcher-accelerator.html}
 {
-During this JSC "Neurotechnology" project, large scale distributed biometric identification system was developed based on principles of Virtual Synchrony model and Neurotechnology's proprietary biometric algorithms.
+During this JSC "Neurotechnology" project, large scale distributed biometric identification system was developed based on principles of virtual synchrony model and Neurotechnology's proprietary biometric algorithms.
 Linear scalability has been achieved in capacity and speed with cluster sizes up to 30 nodes.
-The cluster is capable of storing 160 million records (10 fingerprints per record) while matching at the speed of 300 million records per second when used without GPU acceleration.
-The system is a CP system which achieves sequential consistency on per subject basis at the cost of being unavailable if quorum is lost.
-Separate asynchronous replication protocol was implemented to provide weaker consistency guarantees, but achieve high availability.\\
-\rule{0mm}{5mm}\textbf{Technologies:} Linux, Docker, Kubernetes, helm, C++, mysql, corosync.}
+The cluster is capable of storing 1.6 billion fingerprint records while matching at the speed of 3 billion fingerprints per second when used without GPU acceleration.
+Other modalities, like Face and Iris is also supported.\\
+\rule{0mm}{5mm}\textbf{Technologies:} Linux, Docker, Kubernetes, helm, C++, mysql, corosync, Neurotechnology Biometric SDK.}
 
 \section{More notable contributions to open source projects}
 
