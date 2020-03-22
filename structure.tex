@@ -82,13 +82,26 @@ SmallCapsFeatures = {Letters = SmallCaps}
 \hspace{2cm} \= \kill
 \textbf{#1} \> \href{#4}{#3} \\
 \textbf{#2} \>\+ \textit{#5} \\
-\begin{minipage}{\smallertextwidth}
-\vspace{2mm}
+%\begin{minipage}{\smallertextwidth}
+%\vspace{2mm}
 #6
-\end{minipage}
+%\end{minipage}
 \end{tabbing}
-\vspace{2mm}
+%\vspace{2mm}
 }
+
+
+%----------------------------------------------------------------------------------------
+%	HOBBY PROJECT COMMAND
+%----------------------------------------------------------------------------------------
+
+\newcommand{\hobbyproject}[2]{
+\begin{tabbing}
+\hspace{2cm} \= \kill
+\textbf{#1} \> #2 \\
+\end{tabbing}
+}
+
 
 %----------------------------------------------------------------------------------------
 %	SKILL GROUP COMMAND

@@ -9,6 +9,8 @@
 \input{structure.tex}
 
 \usepackage{multicol}
+\usepackage{enumitem}
+\usepackage{xurl}
 
 
 \begin{document}
@@ -19,9 +21,7 @@
 \parbox{0.5\textwidth}{ % First block
 \begin{tabbing} % Enables tabbing
 \hspace{3cm} \= \hspace{4cm} \= \kill % Spacing within the block
-{\bf Address:} \> Paukščių tako 72,\\ % Address line 1
-\> Vilnius, LT12189\\ % Address line 2
-{\bf Date of birth:} \> 1992-09-30\\ % Date of birth 
+{\bf Date of birth:} \> 1992-09-30\\ % Date of birth
 \end{tabbing}}
 \hfill % Horizontal space between the two blocks
 \parbox{0.5\textwidth}{ % Second block
@@ -44,89 +44,130 @@ Since then, I have been working on projects related to programming in profession
 
 \tabbedblock{
 	\bf{2011 - 2015} \> University of Vilnius Bachelors degree in Software Engineering - \href{http://www.vu.lt}{University of Vilnius} \\[5pt]
-	\>First and second semesters - 90+\% Average\\
+	\>First and second semesters - 90+\% Average
 	\>\+
 }
 
-\tabbedblock{
-	\bf{2011} \> Andrew Ng online course "Machine Learning". \textit{http://ml-class.org}\\
-	\>\+
-}
+\section{Experience}
 
-\section{Professional experience}
+\hobbyproject
+{2007}{Hobby project}
+\begin{itemize}[leftmargin=2cm,topsep=-0.5cm]
+
+\item \textbf{Obstacle avoiding robot for ”Infobalt 2007” excibition}
+
+This is one of the most interesting works from my early ages. Robot was controlled by AVR AT-
+mega microcontroller and had some IR sensors for obstacle detection.
+
+\rule{0mm}{5mm}\textbf{Technologies:} AVR, GCC, Servo.
+
+\rule{0mm}{5mm}\textbf{Reference:} \url{http://blog.elektronika.lt/robotai/2007/10/28/reportazai-is-infobalt2007/}
+
+\end{itemize}
+
+
+
 
 \job
 {2011 -}{2015}
 {JSC "Elektromotus", Žirmūnų g. 68, Vilnius, Lietuva}
 {http://www.elektromotus.eu}
 {Software engineer}
-{
-}
+{}
+\begin{itemize}[leftmargin=2cm,topsep=-0.5cm]
+
+\item \textbf{Battery Management System "Emus BMS"}
+
+This Battery Management System is JSC "Elektromotus" product.
+I was one of the main developers of this system in 2011.
+
+\rule{0mm}{5mm}\textbf{Technologies:} AVR, svn, GCC, Linux, Qt4.
+
+\rule{0mm}{5mm}\textbf{Reference:} \url{https://emusbms.com/product-category/g1-control-unit}
+
+\item \textbf{Electric "Smart fourtwo" conversion kit ECU.}
+
+During this JSC "Elektromotus" project electric conversion kit for "Smart fortwo" car has been developed.
+I have designed and programmed firmware for main ECU unit which controlled engine, gearbox, cooling and communicated to other systems over CAN bus.
+
+\rule{0mm}{5mm}\textbf{Technologies:} ARM-Cortex M3, Linux, GCC, git, CAN.
+
+\rule{0mm}{5mm}\textbf{Reference:} \url{http://grynas.delfi.lt/tv/lietuviu-perdarytas-elektromobilis-100-km-nuvaziuoja-uz-7-litus.d?id=61776195}
+
+\item \textbf{Sensor network for Norwegian railways contact wire monitoring.}
+
+During this JSC "Elektromotus" project I and one of my colleagues developed a custom wireless sensor network system for acceleration and rotation measurements of contact wire.
+Due to high requirements for power consumption - we developed custom variable latency radio network protocol to allow radio hardware to be in low-power mode most of the time.
+The system was capable of measuring and reporting data for over a week on single charge even if sensors are scattered over 1 km range.
+
+\rule{0mm}{5mm}\textbf{Technologies:} ARM-Cortex M3, Linux kernel device drivers, GCC, git, MEMS, 2.4Ghz radio, Raspberry pi, GSM, VPN, VPS.
+
+\rule{0mm}{5mm}\textbf{Reference:} \url{https://www.sciencedirect.com/science/article/pii/S2214399816300121}
+
+\end{itemize}
 
 \job
 {2015 -}{now}
 {JSC "Neurotechnology", Laisvės pr. 125A, Vilnius, Lietuva}
 {http://www.neurotechnology.com}
 {Software engineer}
-{
-}
+{}
 
-\section{Projects}
+\begin{itemize}[leftmargin=2cm,topsep=-0.5cm]
+\item \textbf{MegaMatcher Accelerator Cluster}
 
-\job
-{2007}{}
-{Obstacle avoiding robot for "Infobalt 2007" excibition.}
-{http://blog.elektronika.lt/robotai/2007/10/28/reportazai-is-infobalt2007/}
-{http://blog.elektronika.lt/robotai/2007/10/28/reportazai-is-infobalt2007/}
-{This is one of the most interesting works from my early ages.
-Robot was controlled by AVR ATmega microcontroller and had some IR sensors for obstacle detection. \\
-\rule{0mm}{5mm}\textbf{Technologies:} AVR, GCC.}
-
-
-\job
-{2011 -}{2012}
-{Battery Management System "Emus BMS"}
-{https://emusbms.com/product-category/g1-control-unit}
-{https://emusbms.com/product-category/g1-control-unit}
-{
-This Battery Management System is JSC "Elektromotus" product.
-I was one of the main developers of this system in 2011.
-One of the most notable uses of this system is "ACCIONA" team in Dakar rally.\\
-\rule{0mm}{5mm}\textbf{Technologies:} AVR, svn, GCC, Linux, Qt4.}
-
-\job
-{2012 - }{2013}
-{Electric "Smart fourtwo" conversion kit ECU.}
-{http://grynas.delfi.lt/tv/lietuviu-perdarytas-elektromobilis-100-km-nuvaziuoja-uz-7-litus.d?id=61776195}
-{http://grynas.delfi.lt/tv/lietuviu-perdarytas-elektromobilis-100-km-nuvaziuoja-uz-7-litus.d?id=61776195}
-{
-During this JSC "Elektromotus" project electric conversion kit for "Smart fortwo" car has been developed.
-I have designed and programmed firmware for main ECU unit which controlled engine, gearbox, cooling and communicated to other systems over CAN bus.\\
-\rule{0mm}{5mm}\textbf{Technologies:} ARM-Cortex M3, Linux, GCC, git, CAN.}
-
-\job
-{2014 -}{2015}
-{Sensor network for Norvegian railways contact wire monitoring.}
-{https://www.sciencedirect.com/science/article/pii/S2214399816300121}
-{https://www.sciencedirect.com/science/article/pii/S2214399816300121}
-{
-During this JSC "Elektromotus" project I and one of my colleagues developed a custom wireless sensor network system for acceleration and rotation measurements of contact wire.
-Due to high requirements for power consumption - we developed custom variable latency radio network protocol to allow radio hardware to be in low-power mode most of the time.
-The system was capable of measuring and reporting data for over a week on single charge even if sensors are scattered over 1 km range.\\
-\rule{0mm}{5mm}\textbf{Technologies:} ARM-Cortex M3, Linux kernel device drivers, GCC, git, MEMS, 2.4Ghz radio, Raspberry pi, GSM, VPN, VPS.}
-
-\job
-{2016 -}{now}
-{MegaMatcher Accelerator Cluster}
-{https://www.neurotechnology.com/megamatcher-accelerator.html}
-{https://www.neurotechnology.com/megamatcher-accelerator.html}
-{
 During this JSC "Neurotechnology" project, I, together with one of my  colleagues, developed large scale distributed biometric identification system on principles of virtual synchrony model and Neurotechnology's proprietary biometric algorithms.
 We achieved linear scalability in capacity and speed with cluster sizes up to 30 nodes.
 The cluster is capable of storing 1.6 billion fingerprint records while matching at the speed of 3 billion fingerprints per second when used without GPU acceleration.
-Other modalities, like Face and Iris is also supported.
-The system has been successfully deployed for multiple countries national ID and border control projects. \\
-\rule{0mm}{5mm}\textbf{Technologies:} Linux, Docker, Kubernetes, helm, C++, mysql, corosync, Neurotechnology Biometric SDK.}
+Other modalities, like Face and Iris are also supported.
+The system has been successfully deployed for multiple countries national ID and border control projects.
+
+\rule{0mm}{5mm}\textbf{Technologies:} Linux, Docker, Kubernetes, helm, C++, mysql, corosync, Neurotechnology Biometric SDK.
+
+\rule{0mm}{5mm}\textbf{Reference:} \url{https://www.neurotechnology.com/megamatcher-accelerator.html}
+
+\end{itemize}
+
+\section{Skills}
+
+\begin{multicols}{2}
+
+\strong{Tools and Technologies}
+\begin{itemize}
+	\item{Docker, LXC}
+	\item{Kubernetes, Helm}
+	\item{Apache kafka, Apache zookeeper}
+	\item{MySQL, Galera}
+	\item{Jenkins}
+	\item{git, svn}
+	\item{GCC, GDB, GNU make, cmake}
+	\item{Linux, Debian}
+\end{itemize}
+
+\columnbreak
+
+\strong{Programming languages}
+\begin{itemize}
+	\item{C, C++}
+	\item{Assembler}
+	\item{Python}
+	\item{Bash}
+\end{itemize}
+
+
+\strong{Embedded Systems}
+\begin{itemize}
+	\item{STM32F series microcontrollers}
+	\item{Atmel AVR series microcontrollers}
+	\item{Cross-compilation with GCC, GDB}
+\end{itemize}
+
+
+\vfill
+\end{multicols}
+
+
+\clearpage
 
 \section{More notable contributions to open source projects}
 
@@ -172,44 +213,7 @@ Implementation of a new feature for X11 compositor which helps to lower eye stra
 \end{itemize}
 }
 
-\section{Skills}
 
-\begin{multicols}{2}
-
-\strong{Tools and Technologies}
-\begin{itemize}
-	\item{Docker, Linux namespaces}
-	\item{Kubernetes, Helm}
-	\item{Apache kafka, Apache zookeeper}
-	\item{MySQL, Galera}
-	\item{Jenkins}
-	\item{git, svn}
-	\item{Bash}
-	\item{GCC, GDB, GNU make, cmake}
-	\item{Linux, Debian}
-\end{itemize}
-
-\columnbreak
-
-\strong{Programming languages}
-\begin{itemize}
-	\item{C, C++}
-	\item{Assembler}
-	\item{Python}
-	\item{Bash}
-\end{itemize}
-
-
-\strong{Embedded Systems}
-\begin{itemize}
-	\item{STM32F series microcontrollers}
-	\item{Atmel AVR series microcontrollers}
-	\item{Cross-compilation with GCC, GDB}
-\end{itemize}
-
-
-\vfill
-\end{multicols}
 
 \section{Interests}
 
